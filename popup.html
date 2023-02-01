@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <div class="popup-wrapper">
+            <div class="popup">
+                <div class="popup-header">
+                    <h1>Time Clock</h1>
+                    <p id="current-site"></p>
+                    <button id="clock-in" class="clock-in-btn">Clock In</button>
+                    <button id="clock-out" class="clock-out-btn">Clock Out</button>
+                </div>
+                <div class="popup-body">
+                    <div class="stats">
+                        <div id="clock-status-wrapper">
+                            <p>Status: <span id="clock-status"></span></p>
+                        </div>
+                        <div class="cs-current-hours">
+                            <h2>Total hours for this site:</h2>
+                            <p id="current-total-hours"></p>
+                            <button id="set-hours-daily">Last 24 hours</button>
+                            <button id="set-hours-weekly">Last 7 days</button>
+                            <button id="set-hours-monthly">Last 30 days</button>
+                            <button id="set-hours-yearly">Last 365 days</button>
+                            <p id="current-hours"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
